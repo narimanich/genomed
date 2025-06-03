@@ -1,0 +1,4 @@
+CREATE DATABASE IF NOT EXISTS shortlink;
+CREATE USER IF NOT EXISTS 'shortuser'@'%' IDENTIFIED BY 'shortpass';
+GRANT ALL PRIVILEGES ON shortlink.* TO 'shortuser'@'%';
+FLUSH PRIVILEGES;
